@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+
+    <style>
+        
+        body {
+            margin: auto;
+            padding: 3px;
+            text-align: center;
+            background: url(bgcolor.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .wrapper {
+            background: linear-gradient(rgba(239, 239, 239, 0.247), transparent);
+        }
+        i {
+            font-size: xx-large;
+        }
+        span {
+            font-weight: bold;
+            font-size: large;
+        }
+        .color1 {
+            border: 2px, solid, red;
+            color: red;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color2 {
+            border: 2px, solid, orange;
+            color: orange;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color3 {
+            border: 2px, solid, yellow;
+            color: rgb(239, 239, 108);
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color4 {
+            border: 2px, solid, green;
+            color: green;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color5 {
+            border: 2px, solid, turquoise;
+            color: turquoise;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color6 {
+            border: 2px, solid, blue;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+            color: blue;
+        }
+        .color7 {
+            border: 2px, solid, purple;
+            color: purple;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color8 {
+            border: 2px, solid, pink;
+            color: pink;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color9 {
+            border: 2px, solid, brown;
+            color: brown;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color10 {
+            border: 2px, solid, black;
+            color: black;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color11 {
+            border: 2px, solid, gray;
+            color: gray;
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .color12 {
+            border: 2px, solid, white;
+            color: rgb(213, 211, 211);
+            padding: 3px;
+            margin: 5px;
+            height: 300px;
+        }
+        .description {
+            margin: auto;
+            text-align: center;
+        }
+        .positive {
+            display: inline-block;
+            width: 20%;
+        }
+        .negative {
+            display: inline-block;
+            width: 20%;
+        }
+        .symbolizes {
+            display: inline-block;
+            width: 20%;
+        }
+        .effects {
+            display: inline-block;
+            width: 20%;
+        }
+        .color1:hover {
+            background-image: linear-gradient(to right, red , rgb(254, 184, 184));
+            color: white;
+            border: none;
+        }
+        .color2:hover {
+            background-image: linear-gradient(to right, orange, rgb(237, 208, 152));
+            border: none;
+            color: white;
+        }
+        .color3:hover {
+            background-image: linear-gradient(to right, yellow, rgb(251, 251, 195));
+            border: none;
+            p, h1 {
+                color: black;
+            }
+        }
+        .color4:hover {
+            background-image: linear-gradient(to right, green, rgb(193, 255, 193));
+            border: none;
+            color: white;
+        }
+        .color5:hover {
+            background-image: linear-gradient(to right, turquoise, rgb(177, 253, 245));
+            border: none;
+            p, h1 {
+                color: black;
+            }
+        }
+        .color6:hover {
+            background-image: linear-gradient(to right, blue, rgb(183, 183, 252));
+            border: none;
+            color: white;
+        }
+        .color7:hover {
+            background-image: linear-gradient(to right, purple, rgb(244, 151, 244));
+            border: none;
+            color: white;
+        }
+        .color8:hover {
+            background-image: linear-gradient(to right, pink, rgb(242, 164, 177));
+            border: none;
+            color: white;
+        }
+        .color9:hover {
+            background-image: linear-gradient(to right, brown, rgb(247, 163, 163));
+            border: none;
+            color: white;
+        }
+        .color10:hover {
+            background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.427));
+            border: none;
+            color: white;
+        }
+        .color11:hover {
+            background-image: linear-gradient(to right, gray, rgb(68, 68, 68));
+            border: none;
+            color: white;
+        }
+        .color12:hover {
+            background-image: linear-gradient(to right, white, rgb(130, 130, 130));
+            border: none;
+            p, h1 {
+                color: black;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="color1">
+            <h1>RED</h1>
+            <p>The color of passion and energy. Red draws attention like no other
+                color and radiates a strong and powerful energy that motivates us to
+                take action. It is also linked to sexuality and stimulates deep and intimate passion.
+                Red is ubiquitously used to warn and signal caution and danger.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Sexuality <br> Courage <br> Desire 
+                    <br> Confidence</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Anger <br> Revenge <br> Danger 
+                    <br> Aggression</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Action <br> Strength <br> Energy
+                    <br> Passion</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Attention <br> Motivates <br> Stimulates
+                    <br> Cautions</p>
+                </div>
+            </div>
+        </div>
+        <div class="color2">
+            <h1>ORANGE</h1>
+            <p>The color of enthusiasm and emotion.
+                 Orange exudes warmth and joy and is considered a fun color 
+                 that provides emotional strength. It is optimistic and upliftning, 
+                 adds spontaneity and positivity to life and it encourages social 
+                 communication and creativity. It is a youthful and energetic color.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Spontaneity <br> Creativity <br> Warmth 
+                    <br> Positivity</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Exhibitionism <br> Superficial <br> Impatient 
+                    <br> Domination</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Emotion <br> Youth <br> Optimism
+                    <br> Enthusiasm</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Encourages <br> Uplifts <br> Stimulates
+                    <br> Communicate</p>
+                </div>
+            </div>
+        </div>
+        <div class="color3">
+            <h1>YELLOW</h1>
+            <p>The color of happiness and optimism. Yellow is a cheerful and 
+                energetic color that brings fun and joy to the world. It makes
+                 learning easier as it affects the logical part of the brain, 
+                 stimulating mentality and perception. It inspires thought and curiosity 
+                 and boosts enthusiasm and confidence.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Creativity <br> Perception <br> Mentality 
+                    <br> Warmth</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Cowardice <br> Deception <br> Egotism 
+                    <br> Caution</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Happiness <br> Optimism <br> Positivity
+                    <br> Intellect</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Clarifies <br> Inspires <br> Amuses
+                    <br> Energizes</p>
+                </div>
+            </div>
+        </div>
+        <div class="color4">
+            <h1>GREEN</h1>
+            <p>The color of happiness and optimism. Yellow is a cheerful and 
+                energetic color that brings fun and joy to the world. It makes 
+                learning easier as it affects the logical part of the brain, 
+                stimulating mentality and perception. It inspires 
+                thought and curiosity and boosts enthusiasm and confidence.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Generosity <br> Hope <br> Prosperity
+                    <br> Luck</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Judgemental <br> Envy <br> Materialism
+                    <br> Inexperience</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Harmony <br> Safety <br> Growth
+                    <br> Health</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Revitalizes <br> Balances <br> Relaxes
+                    <br> Encourages</p>
+                </div>
+            </div>
+        </div>
+        <div class="color5">
+            <h1>TURQUOISE</h1>
+            <p>The color of calmness and clarity. Turquoise stabilizes emotions 
+                and increases empathy and compassion. It emits a cool calming peace,
+                gives us a boost of positive mental energy that improves 
+                concentration and clarifies our mind, and creates a balance that clears 
+                the path to spiritual growth.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Concentrate <br> Growth <br> Peace 
+                    <br> Empathy</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Narcissism <br> Stress <br> Secrecy 
+                    <br> Boastfulness</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Compassion <br> Calmness <br> Clarity
+                    <br> Communicate</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Balances <br> Clarifies <br> Calms
+                    <br> Stabilizes</p>
+                </div>
+            </div>
+        </div>
+        <div class="color6">
+            <h1>BLUE</h1>
+            <p>The color of trust and loyalty. Blue has a calming and relaxing 
+                effect on our psyche, that gives us peace and makes us feel confident and secure. 
+                It dislikes confrontation and too much attention, but it is an honest, reliable 
+                and responsible color and you can always count on its support.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Confidence <br> Peace <br> Honesty 
+                    <br> Reliability</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Conservative<br> Passive <br> Depressed 
+                    <br> Predictable</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Security <br> Trust <br> Loyalty
+                    <br> Responsible</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Protects <br> Calms <br> Relaxes
+                    <br> Supports</p>
+                </div>
+            </div>
+        </div>
+        <div class="color7">
+            <h1>PURPLE</h1>
+            <p>The color of spirituality and imagination. Purple inspires us 
+                to divulge our innermost thoughts, which enlightens us with wisdom 
+                of who we are and encourages spiritual growth. It is often associated 
+                with royalty and luxury, and its mystery and magic sparks creative fantasies.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Compassion <br> Fantasy <br> Wisdom 
+                    <br> Creativity</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Sensitive <br> Vigilant <br> Immature 
+                    <br> Emotional</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Spirituality <br> Mystery <br> Royalty
+                    <br> Imagination</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Enlightens <br> Inspires <br> Uplifts
+                    <br> Encourages</p>
+                </div>
+            </div>
+        </div>
+        <div class="color8">
+            <h1>PINK</h1>
+            <p>The color of love and compassion. Pink is kind and comforting, 
+                full of sympathy and compassion, and makes us feel accepted. Its friendly,
+                 playful spirit calms and nurtures us, bringing joy and warmth into our 
+                 lives. Pink is also a feminine and intuitive color that is bursting with pure romance.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Kindness <br> Warmth <br> Romance 
+                    <br> Intuition</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Emotional <br> Timid <br> Immature 
+                    <br> Unconfident</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Compassion <br> Love <br> Femininity
+                    <br> Playfulness</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Sympathizes <br> Calms <br> Nurtures
+                    <br> Comforts</p>
+                </div>
+            </div>
+        </div>
+        <div class="color9">
+            <h1>BROWN</h1>
+            <p>The color of stability and reliability. Brown is dependable and 
+                comforting. A great counselor and friend full of wisdom. You can count
+                 on its help if you need an honest opinion, support and protection. It 
+                 stabilizes us, helps us stay grounded and inspires us to appreciate the simple things in life.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Appreciation <br> Support <br> Wisdom 
+                    <br> Dependable</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Boring <br> Dull <br> Timid 
+                    <br> Predictable</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Reliability <br> Stability <br> Honesty
+                    <br> Comfort</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Simplifies <br> Protects <br> Grounds
+                    <br> Stabilizes</p>
+                </div>
+            </div>
+        </div>
+        <div class="color10">
+            <h1>BLACK</h1>
+            <p>The color of power and sophistication. Black is an incredibly 
+                strong and intimidating color that exudes authority and makes us 
+                feel secure and protected. Often seen at formal and prestigious events, 
+                this mysterious marvel arouses and seduces our senses with its elegance and sexiness.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Formality <br> Strength <br> Prestige
+                    <br> Authority</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Depression <br> Sadness <br> Pessimism 
+                    <br> Dominance</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Protection <br> Power <br> Elegance
+                    <br> Sophisticated</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Mystifie s<br> Seduces <br> Secures
+                    <br> Intimidates</p>
+                </div>
+            </div>
+        </div>
+        <div class="color11">
+            <h1>GRAY</h1>
+            <p>The color of compromise and control. Gray is neutral, conservative 
+                and unemotional. It is practically solid as a rock, making it incredibly 
+                stable, reliable and calming. It has a peaceful, relaxing and soothing 
+                presence. Gray avoids attention but offers mature, 
+                insightful advice to anyone who asks.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Reliability <br> Maturity <br> Intellect 
+                    <br> Conservative</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Pessimistic <br> Sad <br> Indecisive 
+                    <br> Unemotional</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Compromise <br> Neutral <br> Control
+                    <br> Practical</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Stabilizes <br> Calms <br> Relaxes
+                    <br> Soothes</p>
+                </div>
+            </div>
+        </div>
+        <div class="color12">
+            <h1>WHITE</h1>
+            <p>The color of purity and innocence. White is a true balance of all 
+                colors and is associated with cleanliness, simplicity and perfection. 
+                It loves to make others feel good and provides hope and clarity by 
+                refreshing and purifying the mind. It also promotes open-mindedness 
+                and self-reflection.
+            </p>
+            <div class="description">
+                <div class="positive">
+                <p><i class="bx bxs-like"></i><br><span>Positive</span> <br> Goodness <br> Hope <br> Clarity 
+                    <br> Openess</p>
+                </div>
+                <div class="negative">
+                <p><i class="bx bxs-dislike"></i><br> <span>Negative</span> <br> Boring <br> Cold <br> Empty 
+                    <br> Distant</p>
+                </div>
+                <div class="symbolizes">
+                <p><i class="bx bxs-show"></i><br> <span>Symbolizes</span> <br> Cleanliness <br> Purity <br> Innocence
+                    <br> Perfection</p>
+                </div>
+                <div class="effects">
+                <p><i class="bx bxs-brain"></i><br> <span>Effects</span> <br> Refreshes <br> Balances <br> Purifies
+                    <br> Simplifies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
